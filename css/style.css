@@ -1,0 +1,53 @@
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:ital@1&family=Sofia&display=swap"rel="stylesheet">@font-face {
+    font-family: ;
+    src: url();
+    font-weight: ;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:beige;
+}
+
+h1 {
+    font-family: 'sofis', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: maroon;
+    font-size: xx-large;
+}
+
+h3 {
+    font-family: 'lalezar', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: sienna;
+    font-size: large;
+}
+#pizzaRendeles {
+    font-family: 'lalezar', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: sienna;
+    font-size: large;
+}
+
+p {
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    color: rgb(31, 23, 1);
+    font-size: small;
+}
+
+ul {
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    color: rgb(31, 23, 1);
+    font-size: small;
+}
+ol {
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    color: rgb(31, 23, 1);
+    font-size: small;
+}
+
+li {
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    color: rgb(31, 23, 1);
+    font-size: small;
+}
+
+img {
+    width: 300px;
+}
