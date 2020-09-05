@@ -4,49 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib\bootstrap-4.5.2-dist\css\bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Pizzabolt - magunkról</title>
     <link rel="stylesheet" href="css\style.css">
 </head>
 
 <body>
-    <ul>
-        <li><a href="/">Kezdőlap</a></li>
-        <li><a href="menu.html">Menü</a></li>
-        <li><a href="order.html" target="_blank">Rendelés</a></li>
-        <li><a href="about.html">Rólunk</a></li>
-    </ul>
-    <p>
-        A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as
-        évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a
-        betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl,
-        de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem
-        Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.
-    </p>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #daa520;">
+        <a class="navbar-brand" href="index.html">Pizzabolt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Pizzabolt<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="action.html">Akciók</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menük</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Rendelés</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Rólunk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Bejelentkezés</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
     <h3>Címünk</h3>
     <h4>Kerekerdő, Kacskaringós utca 33.
-        <p></p>
-        <table>
-            <thead>Nyitva tartás</thead>
-            <tbody>
-                <tr>
-                    <td>Hétfőtől péntekig</td>
-                    <td rowspan="2">8:00</td>
-                    <td>22:00</td>
-                </tr>
-                <tr>
-                    <td>Szombaton</td>
-                    <td>24:00</td>
-                </tr>
-                <tr>
-                    <td>Vasárnap</td>
-                    <td>10:00</td>
-                    <td>18:00</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>Útmutató, hogy megtalálj</p>
-        <img src="img/tablak.jpg"></a>
     </h4>
+    </p>
+    <table>
+        <thead>Nyitva tartás</thead>
+        <tbody>
+            <tr>
+                <td>Hétfőtől péntekig</td>
+                <td rowspan="2">8:00</td>
+                <td>22:00</td>
+            </tr>
+            <tr>
+                <td>Szombaton</td>
+                <td>24:00</td>
+            </tr>
+            <tr>
+                <td>Vasárnap</td>
+                <td>10:00</td>
+                <td>18:00</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Útmutató, hogy megtalálj</p>
+    <img src="img/tablak.jpg"></a>
+    <p>
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <table class="table table-striped table-bordered table-sm table-hover">
+                    <thead>
+                        <th>Város</th>
+                        <th>Utca</th>
+                        <th>Telefon</th>
+                    </thead>
+                    <tbody>
+                        <tr class="table-warning">
+                            <td>Budapest</td>
+                            <td>Dinomdánom utca 5.</td>
+                            <td>1/234-4567</td>
+                        </tr>
+                        <tr>
+                            <td>Pécs</td>
+                            <td>Dinomdánom utca 5.</td>
+                            <td>1/234-4567</td>
+                        </tr>
+                        <tr>
+                            <td>Szeged</td>
+                            <td>Dinomdánom utca 5.</td>
+                            <td>1/234-4567</td>
+                        </tr>
+                        <tr>
+                            <td>Győr</td>
+                            <td>Dinomdánom utca 5.</td>
+                            <td>1/234-4567</td>
+                        </tr>
+                        <tr>
+                            <td>Debrecen</td>
+                            <td>Dinomdánom utca 5.</td>
+                            <td>1/234-4567</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
 </body>
 
 </html>

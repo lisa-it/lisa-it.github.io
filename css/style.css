@@ -3,7 +3,7 @@
     src: url();
     font-weight: ;
 }
-html {
+html body {
     font-family: Arial, Helvetica, sans-serif;
     background-color:beige;
 }
@@ -46,6 +46,11 @@ li {
     font-family: 'roboto', Arial, Helvetica, sans-serif;
     color: rgb(31, 23, 1);
     font-size: small;
+}
+legend {
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    color: rgb(31, 23, 1);
+    font-size: large;
 }
 
 img {
