@@ -20,9 +20,6 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Pizzabolt<span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="action.html">Akciók</a>
                 </li>
@@ -51,73 +48,80 @@
     <p></p>
     Kérjük, adja le rendelését!
     <p>
-        <div class="container">
-            <form>
-                <fieldset>
-                    <legend>Személyes adatok</legend>
-                    <div>
-                        <label for="name">Név: *</label>
-                        <input id="name" name="name" type="text" placeholder="Név" required>
-                    </div>
-                    <div>
-                        <label for="email">E-mail: *</label>
-                        <input id="email" name="email" type="email" placeholder="E-mail" required>
-                    </div>
-                    <div>
-                        <label for="address">Cím: *</label>
-                        <input id="address" name="address" type="text" placeholder="Cím" required>
-                    </div>
-                    <div>
-                        <label for="comment">Megjegyzés:</label>
-                        <input id="comment" name="comment" type="text" placeholder="Megjegyzés" required>
-                    </div>
-                </fieldset>
-            </form>
-        </div>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <div>
+                    <label for="name">Név: *</label>
+                    <input id="name" name="name" type="text" placeholder="Név" required>
+                </div>
+                <div>
+                    <label for="email">E-mail: *</label>
+                    <input id="email" name="email" type="email" placeholder="E-mail" required>
+                </div>
+                <div>
+                    <label for="address">Cím: *</label>
+                    <input id="address" name="address" type="text" placeholder="Cím" required>
+                </div>
+                <div>
+                    <label for="comment">Megjegyzés:</label>
+                    <input id="comment" name="comment" type="text" placeholder="Megjegyzés" required>
+                </div>
+            </fieldset>
+        </form>
+    </div>
     <p>
-        <fieldset>
-            <legend>Megrendelés adatai</legend>
+        
+    <!-- <fieldset>
+        <legend>Megrendelés adatai</legend>
         <span>Extra feltét</span>
-    <div>
-        <input checked id="nothing" name="extra" type="radio" value="0">
-        <label for="nothing">Nem kérek semmit</label>
-    </div>
-    <div>
-        <input checked id="garlic" name="extra" type="radio" value="0">
-        <label for="garlic">Fokhagymaszósz</label>
-    </div>
-    <div>
-        <input checked id="tomato" name="extra" type="radio" value="0">
-        <label for="tomato">Extra paradicsomszósz</label>
-    </div>
-    <div>
-        <input type="button" value="Rendelés"> Ár: <span>1200</span> Ft
-    </div>
-</fieldset>
-<fieldset>
-<div class="container">
-    <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6">
-            <h3>Pizzarendelés</h3>
-            <form action="">
-                <div class="form-group">
-                    <label for="">Feltét</label>
-                    <input type="text" name="top-input" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="">Mennyiség</label>
-                    <input type="number" name="amount-input" class="form-control">
-                </div>
-                <button class="btn btn-primary">Megrendelés</button>
-            </form>
+        <div>
+            <input checked id="nothing" name="extra" type="radio" value="0">
+            <label for="nothing">Nem kérek semmit</label>
         </div>
-        <div class="col-3"></div>
-    </div>
-</div>
-</fieldset>
-</p>
-<script src="js\main.js"></script>
+        <div>
+            <input checked id="garlic" name="extra" type="radio" value="0">
+            <label for="garlic">Fokhagymaszósz</label>
+        </div>
+        <div>
+            <input checked id="tomato" name="extra" type="radio" value="0">
+            <label for="tomato">Extra paradicsomszósz</label>
+        </div>
+        <div>
+            <input type="button" value="Rendelés"> Ár: <span>1200</span> Ft
+        </div>
+    </fieldset> -->
+    <fieldset>
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <h3>Pizzarendelés</h3>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Feltét</label>
+                            <input type="text" name="top-input" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mennyiség</label>
+                            <input type="number" name="amount-input" class="form-control" value="1">
+                            <small class="form-text text-muted">
+                                Minimum 1, maximum 10 db
+                            </small>
+                        </div>
+                        <div class="form-group">
+                                Fizetendő: <span class="show-amount">0 </span> Ft
+                        </div>
+                        <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
+                    </form>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </fieldset>
+    </p>
+    <script src="js\main.js"></script>
 </body>
 
 </html>
