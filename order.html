@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #daa520;">
+    <nav class="navbar navbar-expand-lg navbar-light fix-top" style="background-color: #daa520;">
         <a class="navbar-brand" href="index.html">Pizzabolt</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
                     <a class="nav-link" href="menu.html">Menük</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="order.html">Rendelés</a>
+                    <a class="nav-link active" href="order.html">Rendelés</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">Rólunk</a>
@@ -43,11 +43,11 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
-        </div>
+        </div>"
     </nav>
-    <p></p>
-    Kérjük, adja le rendelését!
-    <p>
+    <p style="margin-top:20px">
+        Kérjük, adja le rendelését!
+    </p>
     <div class="container">
         <form>
             <fieldset>
@@ -72,8 +72,8 @@
         </form>
     </div>
     <p>
-        
-    <!-- <fieldset>
+
+        <!-- <fieldset>
         <legend>Megrendelés adatai</legend>
         <span>Extra feltét</span>
         <div>
@@ -93,31 +93,29 @@
         </div>
     </fieldset> -->
     <fieldset>
-        <div class="container">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
-                    <h3>Pizzarendelés</h3>
-                    <form action="">
-                        <div class="form-group">
-                            <label for="">Feltét</label>
-                            <input type="text" name="top-input" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Mennyiség</label>
-                            <input type="number" name="amount-input" class="form-control" value="1">
-                            <small class="form-text text-muted">
-                                Minimum 1, maximum 10 db
-                            </small>
-                        </div>
-                        <div class="form-group">
-                                Fizetendő: <span class="show-amount">0 </span> Ft
-                        </div>
-                        <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
-                    </form>
+        <div class="container max-width=50%">
+
+            <h3>Pizzarendelés</h3>
+            <form action="">
+                <div class="form-group">
+                    <label for="">Feltét</label>
+                    <input type="text" name="top-input" class="form-control">
                 </div>
-                <div class="col-3"></div>
-            </div>
+                <div class="form-group">
+                    <label for="">Mennyiség</label>
+                    <input type="number" name="amount-input" class="form-control" value="1">
+                    <small class="form-text text-muted">
+                        Minimum 1, maximum 10 db
+                    </small>
+                </div>
+                <div class="form-group">
+                    Fizetendő: <span class="show-amount">0 </span> Ft
+                </div>
+                <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
+            </form>
+        </div>
+        <div class="col-3"></div>
+        </div>
         </div>
     </fieldset>
     </p>
