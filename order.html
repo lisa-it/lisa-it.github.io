@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lib\bootstrap-4.5.2-dist\css\bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Megrendeles</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css\style.css">
+    <title>Megrendeles</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fix-top" style="background-color: #daa520;">
-        <a class="navbar-brand" href="index.html">Pizzabolt</a>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #daa520;">
+        <a class="navbar-brand" href="index.html">Pizzashop</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,19 +21,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="action.html">Akciók</a>
+                    <a class="nav-link" href="action.html">Aktionen</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="menu.html">Menük</a>
+                    <a class="nav-link" href="menu.html">Menüs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="order.html">Rendelés</a>
+                    <a class="nav-link" href="order.html">Bestellung</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">Rólunk</a>
+                    <a class="nav-link" href="about.html">Über uns</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Bejelentkezés</a>
+                    <a class="nav-link" href="login.html">Anmelden</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -41,19 +41,19 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
             </form>
-        </div>"
+        </div>
     </nav>
     <p style="margin-top:20px">
-        Kérjük, adja le rendelését!
+        Deine Bestellung
     </p>
     <div class="container">
         <form>
             <fieldset>
-                <legend>Személyes adatok</legend>
+                <legend>Persönliche Daten</legend>
                 <div>
-                    <label for="name">Név: *</label>
+                    <label for="name">Name: *</label>
                     <input id="name" name="name" type="text" placeholder="Név" required>
                 </div>
                 <div>
@@ -61,11 +61,11 @@
                     <input id="email" name="email" type="email" placeholder="E-mail" required>
                 </div>
                 <div>
-                    <label for="address">Cím: *</label>
+                    <label for="address">Adresse: *</label>
                     <input id="address" name="address" type="text" placeholder="Cím" required>
                 </div>
                 <div>
-                    <label for="comment">Megjegyzés:</label>
+                    <label for="comment">Notiz:</label>
                     <input id="comment" name="comment" type="text" placeholder="Megjegyzés" required>
                 </div>
             </fieldset>
@@ -95,23 +95,23 @@
     <fieldset>
         <div class="container max-width=50%">
 
-            <h3>Pizzarendelés</h3>
+            <h3>Pizzabestellung</h3>
             <form action="">
                 <div class="form-group">
-                    <label for="">Feltét</label>
+                    <label for="">Zutaten hinzufügen</label>
                     <input type="text" name="top-input" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="">Mennyiség</label>
+                    <label for="">Menge</label>
                     <input type="number" name="amount-input" class="form-control" value="1">
                     <small class="form-text text-muted">
-                        Minimum 1, maximum 10 db
+                        Minimum 1, maximum 10
                     </small>
                 </div>
                 <div class="form-group">
-                    Fizetendő: <span class="show-amount">0 </span> Ft
+                    Zahlen: <span class="show-amount">0 </span> Euro
                 </div>
-                <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
+                <button onclick="calcAmount()" type="button" class="btn btn-primary">Kassa</button>
             </form>
         </div>
         <div class="col-3"></div>
