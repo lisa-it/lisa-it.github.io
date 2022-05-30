@@ -28,17 +28,27 @@ h1 {
     font-size: xx-large;
 }
 
+h2 {
+    font-family: 'lalezar', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: sienna;
+    font-size: x-large;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+
 h3 {
     font-family: 'lalezar', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: sienna;
     font-size: large;
+    margin-bottom: -10px;
+    margin-top: 10px;
 }
+/*
 #pizzaRendeles {
     font-family: 'lalezar', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: sienna;
-    font-size: large;
 }
-
+*/
 p {
     font-family: 'roboto', Arial, Helvetica, sans-serif;
     color: rgb(31, 23, 1);
